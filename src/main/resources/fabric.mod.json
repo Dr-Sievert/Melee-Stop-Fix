@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "melee-stop-fix",
+	"version": "${version}",
+	"name": "Melee Stop Fix",
+	"description": "This mod fixes mobs liek zombies stuttering when performing attack animation!",
+	"authors": [
+		"Dr Sievert"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Dr-Sievert/Melee-Stop-Fix"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/melee_stop_fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sievert.melee_stop_fix.MeleeStopFix"
+		]
+	},
+	"mixins": [
+		"melee_stop_fix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
