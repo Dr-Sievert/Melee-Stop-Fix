@@ -13,5 +13,6 @@ public class MeleeStopFix implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Melee Stop Fix Initialized!");
+		MeleeStopFixConfig.load();
 	}
 }
